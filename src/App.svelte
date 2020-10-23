@@ -1,10 +1,20 @@
 <script>
 	export let name;
+	import Carousel from '@beyonk/svelte-carousel'
+	import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons'
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Carousel perPage={1} autoplay={3000}>
+		<span class="control" slot="left-control">
+			<ChevronLeftIcon />
+		</span>
+		<img src="media/whiteLeftLogo.jpeg" alt="Cobalt white mask" height="600">
+		<img src="media/blueChemistry.jpeg" alt="Cobalt white mask" height="400">
+		<span class="control" slot="right-control">
+			<ChevronRightIcon />
+		  </span>
+	  </Carousel>
 </main>
 
 <style>
