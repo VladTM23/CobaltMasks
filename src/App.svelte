@@ -48,7 +48,7 @@
 	<Alert/>
 	{/if}
 	{#if clicked === false  }
-	<div on:click={handleLottieClick} class="goUp mx-auto w-2/3 md:w-1/2 lg:w-1/3">
+	<div on:click={handleLottieClick} class="sm:goUp mx-auto w-2/3 md:w-1/2 lg:w-1/3">
 
 		<LottiePlayer
 		src="https://assets10.lottiefiles.com/packages/lf20_AQ3M8U.json"
