@@ -6,14 +6,13 @@
 <div class="mt-8 w-7/12 mb-75 mx-auto ">
 
     <div class="border border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-      <div class="mb-8">
-        <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-        <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+      <div class="mb-2">
+        <div class="text-gray-900 font-bold text-xl mb-1">Cobalt Masks for the win 🏆</div>
       </div>
       <div class="flex items-center">
         <div class="inline-flex rounded-md shadow mx-auto">
             <a href="https://strawpoll.com/ofuwgjh6e" class="noDec inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white cobaltBlue hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              Vote!
+              Vote your favourite!
             </a>
           </div>
 
