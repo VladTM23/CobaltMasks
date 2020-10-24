@@ -66,8 +66,9 @@
 		
 	</div>
 
+	<p class="mt-16 text-3xl leading-9 font-extrabold tracking-tight cobaltBlueText sm:text-4xl sm:leading-10"> Hey, {userName}! </p>
 	<Dropdown bind:name={userName} bind:showAlert={showAlert}/>
-	<p class="mt-2 text-3xl leading-9 font-extrabold tracking-tight cobaltBlueText sm:text-4xl sm:leading-10"> Hey, {userName}! </p>
+	
 
 
 	

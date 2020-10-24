@@ -5,7 +5,8 @@
     export let showAlert
 
     document.addEventListener('click' ,function(event){
-        if(event.target.tagName !== 'svg' && event.target.tagName !== 'BUTTON')
+        console.log(event.target.tagName)
+        if(event.target.tagName !== 'svg' && event.target.tagName !== 'BUTTON' && event.target.tagName !== 'path')
         clicked = false
     })
 
@@ -22,7 +23,7 @@
 </script>
 
 
-<div class="relative inline-block text-left">
+<div class="w-56 mt-8 relative inline-block text-left">
   <div>
     <span class="rounded-md shadow-sm">
       <button on:click={handleButtonClick} type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150" id="options-menu" aria-haspopup="true" aria-expanded="true">
@@ -46,10 +47,10 @@
       To: "transform opacity-0 scale-95"
   -->
   {#if clicked}
-  <div class="h-64 origin-top-right  mt-2 w-56 rounded-md shadow-lg">
+  <div class="absolute origin-center mt-2 w-56 rounded-md shadow-lg">
     <div class="rounded-md bg-white shadow-xs">
 
-      <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+      <div class="py-1 overflow-scroll h-32" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
         <a  id="Agota" on:click={handleOptionClick} class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" role="menuitem">Agota</a>
         <a  id="Alex" on:click={handleOptionClick} class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" role="menuitem">Alex</a>
         <a  id="Arthur" on:click={handleOptionClick} class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" role="menuitem">Arthur</a>
