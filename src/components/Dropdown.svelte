@@ -46,7 +46,7 @@
       To: "transform opacity-0 scale-95"
   -->
   {#if clicked}
-  <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg">
+  <div class="h-64 origin-top-right  mt-2 w-56 rounded-md shadow-lg">
     <div class="rounded-md bg-white shadow-xs">
 
       <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">

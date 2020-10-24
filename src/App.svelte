@@ -75,10 +75,10 @@
 	<h1 class="mb-8 text-2xl sm:text-3xl sm:leading-9 font-extrabold tracking-tight cobaltBlueText"> Which design do you like the most? </h1>
 	<div class='w-9/12 mx-auto  '>
 		<Carousel bind:this={carousel} on:change={handleCarousel} perPage={1} >
-			<div class='w-full mx-auto'><img class="lg:w-1/2 lg:mx-auto w-full" src="media/whiteLeftLogo.jpeg"  alt="Cobalt white mask"> 
+			<div class='w-full mx-auto'><img class="xl:w-5/12 md:w-1/2 md:mx-auto w-full" src="media/whiteLeftLogo.jpeg"  alt="Cobalt white mask"> 
 				
 			</div>
-			<div class='w-full mx-auto'><img class="lg:w-1/2 lg:mx-auto w-full" src="media/blueChemistry.jpeg"   alt="Cobalt blue mask"> 
+			<div class='w-full mx-auto'><img class="xl:w-5/12 md:w-1/2 md:mx-auto w-full" src="media/blueChemistry.jpeg"   alt="Cobalt blue mask"> 
 			
 			</div>
 		</Carousel>
@@ -88,14 +88,18 @@
 	<CTA/>
 	
 	  {/if}
-	  <Footer/>
+	  
 	
 </main>
+{#if clicked === false}
+<Footer/>
+{:else}
+<Footer/>
+{/if}
 
 <style>
 	main {
 		text-align: center;
-		margin: 0 auto;
 	}
 
 

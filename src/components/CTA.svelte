@@ -1,4 +1,9 @@
-<div class="mt-8 w-7/12 mx-auto">
+<style>
+  .mb-75{
+    margin-bottom: 75px;
+  }
+</style>
+<div class="mt-8 w-7/12 mb-75 mx-auto ">
 
     <div class="border border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
       <div class="mb-8">
