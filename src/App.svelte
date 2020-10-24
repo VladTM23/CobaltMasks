@@ -6,14 +6,29 @@
 	import Navbar from "./components/Navbar.svelte"
 	import Footer from "./components/Footer.svelte"
 	import CTA from './components/CTA.svelte'
+	import Dropdown from "./components/Dropdown.svelte"
+	import Alert from './components/Alert.svelte'
 
 	let clicked = false
+	let showAlert = false
+
 	let carousel
 	let photoNames=['White mask', 'Blue mask']
 	let photoName = photoNames[0]
+	let userName = "Stranger"
+
+
+
 	function handleLottieClick(event){
-		alert("clicked")
-		clicked=true
+		
+		if( userName!=='Stranger'){
+			clicked=true
+			showAlert=false
+		}
+			
+		else {
+			showAlert=true
+		}
 	}
 
 	function handleCarousel(event){
@@ -21,6 +36,7 @@
 		photoName=photoNames[event.detail.currentSlide]
 
 	}
+	
 
 	
 </script>
@@ -28,7 +44,10 @@
 <main>
 
 	<Navbar/>
-	{#if clicked === false}
+	{#if showAlert}
+	<Alert/>
+	{/if}
+	{#if clicked === false  }
 	<div on:click={handleLottieClick} class="goUp mx-auto w-2/3 md:w-1/2 lg:w-1/3">
 
 		<LottiePlayer
@@ -41,13 +60,18 @@
 	/>
 
 	</div>
-	<div class="md:w-1/2 w-7/12 mx-auto">
+	<div class="md:w-1/2 w-7/12 mx-auto mb-4">
 		<h1 class="text-3xl leading-9 font-extrabold tracking-tight cobaltBlueText sm:text-4xl sm:leading-10"> Welcome to ShipIt 2020!</h1>
-		<h3 class="leading-9 text-gray-500 sm:text-4xl sm:leading-10" > Click on the animation to see our magnificent designs </h3>
+		<h3 class="mt-4 text-gray-500 sm:text-4xl sm:leading-10" > Click on the animation to see our magnificent designs </h3>
 		
 	</div>
+
+	<Dropdown bind:name={userName} bind:showAlert={showAlert}/>
+	<p class="mt-2"> Hello, {userName}! </p>
+
+
 	
-	{:else}
+	{:else }
 	<h1 class="mb-8 text-2xl sm:text-3xl sm:leading-9 font-extrabold tracking-tight cobaltBlueText"> Which design do you like the most? </h1>
 	<div class='w-9/12 mx-auto  '>
 		<Carousel bind:this={carousel} on:change={handleCarousel} perPage={1} >

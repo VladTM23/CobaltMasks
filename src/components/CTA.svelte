@@ -1,19 +1,17 @@
-<div class="cobaltBlueText">
-    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-3xl leading-9 font-extrabold tracking-tight cobaltBlueText sm:text-4xl sm:leading-10">
-        Ready to express your vote?
-        <br>
-      </h2>
+<div class="mt-8 w-7/12 mx-auto">
 
-      <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+    <div class="border border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div class="mb-8">
+        <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+        <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+      </div>
+      <div class="flex items-center">
         <div class="inline-flex rounded-md shadow mx-auto">
-          <a href="https://strawpoll.com/ofuwgjh6e" class="noDec inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white cobaltBlue hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-            Vote!
-          </a>
-        </div>
+            <a href="https://strawpoll.com/ofuwgjh6e" class="noDec inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white cobaltBlue hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+              Vote!
+            </a>
+          </div>
 
       </div>
-
     </div>
-
   </div>
