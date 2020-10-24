@@ -13,7 +13,7 @@
 	let showAlert = false
 
 	let carousel
-	let photoNames=['Design #2', 'Design #3']
+	let photoNames=['Design #2', 'Design #3', 'Design #4']
 	let photoName = photoNames[0]
 	let userName = "Stranger"
 
@@ -75,12 +75,15 @@
 	{:else }
 	<h1 class="mb-8 text-2xl sm:text-3xl sm:leading-9 font-extrabold tracking-tight cobaltBlueText"> Which design do you like the most? </h1>
 	<div class='w-9/12 mx-auto  '>
-		<Carousel bind:this={carousel} on:change={handleCarousel} perPage={1} loop={false}>
-			<div class='w-full mx-auto'><img class="xl:w-5/12 md:w-1/2 md:mx-auto w-full" src="media/design2.jpg"  alt="Cobalt white mask"> 
+		<Carousel bind:this={carousel} on:change={handleCarousel} perPage={1}>
+			<div class='w-full mx-auto'><img class="xl:w-5/12 md:w-1/2 md:mx-auto w-full" src="media/design2.png"  alt="Cobalt white mask"> 
 				
 			</div>
-			<div class='w-full mx-auto'><img class="xl:w-5/12 md:w-1/2 md:mx-auto w-full" src="media/design3.jpeg"   alt="Cobalt blue mask"> 
+			<div class='w-full mx-auto'><img class="xl:w-5/12 md:w-1/2 md:mx-auto w-full" src="media/design3.png"   alt="Cobalt blue mask"> 
 			
+			</div>
+			<div class='w-full mx-auto'><img class="xl:w-5/12 md:w-1/2 md:mx-auto w-full" src="media/design4.png"  alt="Multi Cobalt white mask"> 
+				
 			</div>
 		</Carousel>
 		<p class="mt-1 leading-9 text-gray-500 sm:text-2xl sm:leading-10" > {photoName} </p>
