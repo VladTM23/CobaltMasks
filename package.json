@@ -19,6 +19,7 @@
     "svelte-feather-icons": "^3.3.0"
   },
   "dependencies": {
+    "@lottiefiles/svelte-lottie-player": "^0.1.4",
     "sirv-cli": "^1.0.0"
   }
 }
