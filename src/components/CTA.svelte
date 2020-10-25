@@ -11,7 +11,7 @@
       </div>
       <div class="flex items-center">
         <div class="inline-flex rounded-md shadow mx-auto">
-            <a href="https://strawpoll.com/ofuwgjh6e" class="noDec inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white cobaltBlue hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+            <a href="https://strawpoll.com/sgs4h4h2x" class="noDec inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white cobaltBlue hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
               Vote your favourite!
             </a>
           </div>
